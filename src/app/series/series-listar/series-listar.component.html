@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="series-listar.component.css">
+</head>
+<table id="tabla">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>name</th> 
+      <th>Channel</th>
+      <th>Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of series">
+      <td>{{ serie.id }}</td>
+      <td>{{ serie.name }}</td>
+      <td>{{ serie.channel }}</td>
+      <td>{{ serie.seasons }}</td>
+    </tr>
+    <tr>
+      <td colspan="4">Promedio de temporadas:{{prom}}</td>
+    </tr>
+  </tbody>
+</table>
+
